@@ -1,0 +1,85 @@
+---
+title: "Git and Github"
+subtitle: "An Introduction"
+author: 'Tim Beissinger, Elizabeth King, & Kevin Middleton'
+date: 'Last updated: `r Sys.Date()`'
+output:
+  ioslides_presentation:
+    fig_width: 7
+---
+
+```{r setup, echo=FALSE}
+```
+
+## Notes
+
+This lecture was modeled from several tutorials available online and in some cases, took material & quotes directly:
+
+[Git for Humans by Alice Bartlett](https://speakerdeck.com/alicebartlett/git-for-humans)
+
+[Happy Git and Github for the useR by Jenny Bryan](http://happygitwithr.com/)
+
+[git/github guide by Karl Broman](http://kbroman.org/github_tutorial/)
+
+A Git and Github cheatsheet is [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
+
+## What is Git?
+
+1. Git is an application in the same way a web browser or text editor is an application.
+1. Git is a version control system (It is not the only one available). 
+1. Version control systems are like "track changes" in word. They let you keep track of changes to projects (when you use git with a project, it is called a repository). Basically, they take a snapshot of a project at different stages.
+
+## Why Git?
+
+1. Version control is the only reasonable way to keep track of changes in code, manuscripts, presentations, and data analysis projects.
+
+    - There are other systems (e.g., numbering files) but they will typically be less consistent in use and implementation and result in file bloat
+
+1. Used properly, you will have an "electronic lab book": a record of every small change
+
+1. Merging collaborators’ changes is easy. 
+
+## Why GitHub?
+
+1. Github hosts tons of repositories for projects and software in the life sciences and beyond
+1. It lets you see the history of all of these projects in a totally open way
+1. It allows for easy, seamless collaboration. You can suggest changes to others, they can suggest things to you. You can collaborate with yourself (home computer, work computer, server).
+1. GitHub allows free private repositories for educational use
+
+## Yes, it will hurt to use. It is worth it.
+
+1. Like many aspects of reproducible research, git is something that has a short term cost and a long term benefit. It benefits your future self. 
+1. It will take time to learn to use git, to make it part of your routine workflow, and to feel skilled & comfortable with it. Practice is the answer to this.
+1. The major benefits are that it makes keeping track of the history of a project possible, and it makes collaborating on a project proceed much more smoothly.
+
+## General Use and Terms
+
+1. **repository** - a set of files for a given project that you will track
+1. **commit** - a snapshot of the repository made at a certain time with a message
+1. **clone** - making a copy of a repository to another machine
+1. **remote** - a place to store the master copy of the repository on the internet (e.g. GitHub) 
+1. **branch** - an independent copy of the repository. Often you will try out changes on a developer branch before moving them to the master copy
+1. **push** - moving commits to the remote copy
+1. **pull** - getting commits from the remote copy
+1. **merge** -moving changes from one branch to the master copy
+
+## Use cases
+
+Let's look at some repositories on github to see some examples.
+
+## Assignment 
+
+See [github instructions](https://help.github.com/articles/set-up-git/) and do the following:
+
+1. Get a github account (use your MU email)
+1. Download and install git
+1. Set up git with your user name and email
+1. Set up ssh or a password
+
+Do this before our git workshop!
+
+<center>
+<img src="https://i.pinimg.com/736x/59/d7/0e/59d70e2614d194c97e0cec07c7cbb5ba--carnivore-animal-pictures.jpg" width="40%" />
+</center>
