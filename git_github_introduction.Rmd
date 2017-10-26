@@ -21,6 +21,8 @@ This lecture was modeled from several tutorials available online and in some cas
 
 [git/github guide by Karl Broman](http://kbroman.org/github_tutorial/)
 
+[Version Control with Git from Software Carpentry](http://swcarpentry.github.io/git-novice/)
+
 A Git and Github cheatsheet is [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
 
 Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
