@@ -1,0 +1,18 @@
+- Setting up a new project
+  - Start on GitHub
+  - Start locally (with & without stuff)
+  - git ignore
+  
+- Doing some commits, push, pull, merge
+  - make up some simple activities
+  
+- Ways to use Git: GitHub clients,Command line, Rstudio 
+
+- Problems, warnings, how to recover
+  - Where do problems come from
+  - Burn down
+  
+- Distributing code- making things reproducible for others
+
+repos to look at:
+https://github.com/timbeissinger/Maize-Teo-Scripts

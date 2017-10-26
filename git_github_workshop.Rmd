@@ -1,0 +1,15 @@
+---
+title: "Git and Github"
+subtitle: "Workshop Exercise"
+author: 'Tim Beissinger, Elizabeth King, & Kevin Middleton'
+date: 'Last updated: `r Sys.Date()`'
+output:
+  ioslides_presentation:
+    fig_width: 7
+---
+
+```{r setup, echo=FALSE}
+```
+
+## Notes
+
