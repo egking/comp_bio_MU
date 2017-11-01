@@ -1,15 +1,78 @@
 ---
 title: "Git and Github"
-subtitle: "Workshop Exercise"
+subtitle: "Workshop Exercises"
 author: 'Tim Beissinger, Elizabeth King, & Kevin Middleton'
 date: 'Last updated: `r Sys.Date()`'
 output:
   ioslides_presentation:
     fig_width: 7
+    css: styles.css
 ---
 
 ```{r setup, echo=FALSE}
 ```
 
 ## Notes
+
+This workshop was modeled from several tutorials available online and in some cases, took material & quotes directly:
+
+[Git for Humans by Alice Bartlett](https://speakerdeck.com/alicebartlett/git-for-humans)
+
+[Happy Git and Github for the useR by Jenny Bryan](http://happygitwithr.com/)
+
+[git/github guide by Karl Broman](http://kbroman.org/github_tutorial/)
+
+[Version Control with Git from Software Carpentry](http://swcarpentry.github.io/git-novice/)
+
+A Git and Github cheatsheet is [here](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+
+Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
+
+## Ways to use Git
+
+There are a few ways to use Git. We will show you all three today. 
+
+  - via the command line 
+  - via a GitHub client (e.g. GitKraken)
+  - via Rstudio (using projects)
+
+## Starting a project (i.e. a repository!)
+
+There are a couple different ways to set up a repository. We will go through each method. 
+
+  1. Starting a repository on GitHub (this is the preferred method)
+
+  1. Starting a repository on your machine
+
+    - beginning with an empty project folder
+
+    - beginning with a project folder with stuff in it
+    
+> How do you decide what defines a repository?
+    
+## Starting a repository: On GitHub
+
+**Activity**
+
+  1. Go to GitHub and log in 
+  1. Click the "New Repository" button
+
+## Starting a repository: On Your Machine
+
+- Setting up a new project
+  - Start on GitHub
+  - Start locally (with & without stuff)
+  - git ignore
+  
+- Doing some commits, push, pull, merge
+  - make up some simple activities
+  
+- Ways to use Git: GitHub clients,Command line, Rstudio 
+
+- Problems, warnings, how to recover
+  - Where do problems come from
+  - Burn down
+  
+- Distributing code- making things reproducible for others
+
 

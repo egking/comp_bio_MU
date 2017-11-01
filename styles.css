@@ -1,0 +1,47 @@
+#bluefont {
+   color: blue;
+}
+
+.references {
+   font-size: 60%;
+   padding-left: 22px ;
+   text-indent: -22px ;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+p ul ol {
+  text-align: left;
+  font-size: 80%;
+}
+
+blockquote p {
+  font-size: 80%;
+  display: inline;
+  text-align: left;
+}
+
+<style>
+  .col2 {
+    -webkit-columns: 2 300px; /* chrome, safari */
+    -moz-columns: 2 300px;    /* firefox */
+    columns: 2 300px;         /* number of columns and width in pixels*/
+  }
+  .col3 {
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+    columns: 3 100px;
+  }
+</style>
