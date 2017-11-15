@@ -99,7 +99,7 @@
           </hgroup>
   </slide>
 
-<slide class=""><hgroup><h2>Notes</h2></hgroup><article  id="notes">
+<slide class=''><hgroup><h2>Notes</h2></hgroup><article  id="notes">
 
 <p>This workshop was modeled from several tutorials available online and in some cases, took material and quotes directly:</p>
 
@@ -111,11 +111,11 @@
 
 <p><a href='http://swcarpentry.github.io/git-novice/' title=''>Version Control with Git from Software Carpentry</a></p>
 
-<p>A Git and Github cheatsheet is <a href='https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf' title=''>here</a></p>
+<p>A <a href='https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf' title=''>Git and Github cheatsheet</a></p>
 
 <p>Additional Git resources are listed in Karl&#39;s guide: <a href='http://kbroman.org/github_tutorial/pages/resources.html' title=''>Resources</a></p>
 
-</article></slide><slide class=""><hgroup><h2>Ways to use Git</h2></hgroup><article  id="ways-to-use-git">
+</article></slide><slide class=''><hgroup><h2>Ways to use Git</h2></hgroup><article  id="ways-to-use-git">
 
 <p>There are a few ways to use Git. We will show you all three today.</p>
 
@@ -130,17 +130,28 @@
 <li>via Rstudio (using <a href='https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects' title=''>RStudio projects</a>)</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Starting a project (repository)</h2></hgroup><article  id="starting-a-project-repository">
+</article></slide><slide class=''><hgroup><h2>Plan for the day</h2></hgroup><article  id="plan-for-the-day">
 
-<p>There are a couple different ways to set up a repository.</p>
+<p>We will use two major examples today to learn about using git:</p>
+
+<ol>
+<li>Setting up a personal miscellaneous R functions repository</li>
+<li>Setting up a collaborative repository with a small group</li>
+</ol>
+
+<p>Our goal at the end of the day is for you to feel comfortable using git and committed to use git for the projects you are working on now and in the future.</p>
+
+</article></slide><slide class=''><hgroup><h2>Starting a project (repository)</h2></hgroup><article  id="starting-a-project-repository">
+
+<p>The first thing we need to do is start a new repository. There are a couple different ways to set up a repository.</p>
 
 <ol>
 <li>Starting a repository on GitHub (this is the preferred method)</li>
-<li>Starting a repository on your machine
+<li>Starting a repository on your local machine
 
 <ul>
-<li>beginning with an empty project folder</li>
-<li>beginning with a project folder with stuff in it</li>
+<li>Beginning with an empty project folder</li>
+<li>Beginning with a project folder with stuff in it</li>
 </ul></li>
 </ol>
 
@@ -148,63 +159,129 @@
 <p>How do you decide what defines a repository?</p>
 </blockquote>
 
-</article></slide><slide class=""><hgroup><h2>Starting a repository remotely on GitHub</h2></hgroup><article  id="starting-a-repository-remotely-on-github">
+</article></slide><slide class=''><hgroup><h2>Starting a repository remotely on GitHub</h2></hgroup><article  id="starting-a-repository-remotely-on-github">
 
 <p><strong>Activity</strong></p>
 
 <ol>
 <li>Log in to GitHub.com</li>
 <li>Click the &quot;New Repository&quot; button (under the <code>+</code> icon in the menu bar)</li>
-<li>Clone the repository to your local machine</li>
+<li>Name your repository with your initials and misc (for example EGKmisc) to hold your miscellaneous R functions</li>
+<li>Clone the repository to your local machine
+
+<ul>
+<li>command is git clone</li>
+</ul></li>
 </ol>
 
-</article></slide><slide class=""><hgroup><h2>Benefits of starting a repository on GitHub</h2></hgroup><article  id="benefits-of-starting-a-repository-on-github">
+</article></slide><slide class=''><hgroup><h2>Benefits of starting a repository on GitHub</h2></hgroup><article  id="benefits-of-starting-a-repository-on-github">
 
 <ul>
-<li>Local copy automatically set to properly interact with guthub
+<li>Local copy automatically set to properly interact with github
 
 <ul>
-<li>Push and pull</li>
+<li>Push and pull without additional setup</li>
 </ul></li>
 <li>Move local files into empty repository
 
 <ul>
 <li>Commit in batch or individually</li>
+<li>Push files to GitHub</li>
 </ul></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Starting a repository locally</h2></hgroup><article  id="starting-a-repository-locally">
+</article></slide><slide class=''><hgroup><h2>Ignoring files with <code>.gitignore</code></h2></hgroup><article  id="ignoring-files-with-.gitignore">
 
 <ul>
-<li>Setting up a new project
+<li>git will track all the files in your repository unless you tell it otherwise</li>
+<li>Common files you may not want to track include very large data files and files like the R history file
 
 <ul>
-<li>Start on GitHub</li>
+<li>.DS_Store</li>
+<li>.Rhistory</li>
+<li>.RData</li>
+<li>*.Rda</li>
+<li>Anything with sensitive information</li>
+</ul></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2>Make a change</h2></hgroup><article  id="make-a-change">
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Start a new R script</li>
+<li>Write a function or copy over a function you&#39;ve written before</li>
+<li>Save your file with an informative name in your project folder
+
+<ul>
+<li>Take a look at what you&#39;ve done by typing <code>git status</code>, <code>git diff</code>, or looking in the &quot;Changes&quot; pane</li>
+</ul></li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Commits</h2></hgroup><article  id="commits">
+
+<p>When you are happy with some work you&#39;ve done and want to take a snapshot, you will do what is called a commit.</p>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Stage your files</li>
+<li>Commit them with a message like &quot;add function to claculate mean&quot;</li>
+</ol>
+
+<p>Write informative commit messages. Your future self will appreciate it.</p>
+
+</article></slide><slide class=''><hgroup><h2>Syncing: Push and Pull</h2></hgroup><article  id="syncing-push-and-pull">
+
+<p>What we&#39;ve done so far is take a snapshot locally on our machine. To copy that over to the remote repository on github, we need to push our changes. When we are collaborating, we will also need to pull others changes from the remote. We&#39;ll get to this in a bit.</p>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>git push</li>
+<li>Go to github.com and see that your commit is there.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Git Clients</h2></hgroup><article  id="git-clients">
+
+<p>So far, we&#39;ve used the command line to use git. There are more user friendly mechanisms - git clients.</p>
+
+<p>Let&#39;s go through the same steps with a client.</p>
+
+</article></slide><slide class=''><hgroup><h2>GitKraken</h2></hgroup><article  id="gitkraken">
+
+</article></slide><slide class=''><hgroup><h2>GitHub Desktop</h2></hgroup><article  id="github-desktop">
+
+</article></slide><slide class=''><hgroup><h2>Starting a repository locally</h2></hgroup><article  id="starting-a-repository-locally">
+
+<ul>
 <li>Start locally (with &amp; without stuff)</li>
-</ul></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Ignoring files with <code>.gitignore</code></h2></hgroup><article  id="ignoring-files-with-.gitignore">
+</article></slide><slide class=''><hgroup><h2>RStudio Projects</h2></hgroup><article  id="rstudio-projects">
 
-</article></slide><slide class=""><hgroup><h2>Commits</h2></hgroup><article  id="commits">
+</article></slide><slide class=''><hgroup><h2>Problems, warnings, how to recover</h2></hgroup><article  id="problems-warnings-how-to-recover">
 
-</article></slide><slide class=""><hgroup><h2>Syncing: Push and Pull</h2></hgroup><article  id="syncing-push-and-pull">
+<p>Where do problems come from?</p>
 
-</article></slide><slide class=""><hgroup><h2>Git Clients</h2></hgroup><article  id="git-clients">
+<ul>
+<li>You or your collaboartor makes changes and pushes them. You make changes to the same file(s) without pulling first.</li>
+<li>git will not let you push changes to overwrite other changes</li>
+</ul>
 
-</article></slide><slide class=""><hgroup><h2>GitKraken</h2></hgroup><article  id="gitkraken">
+<p>Burn down</p>
 
-</article></slide><slide class=""><hgroup><h2>Command Line</h2></hgroup><article  id="command-line">
+</article></slide><slide class=''><hgroup><h2>Typical use</h2></hgroup><article  id="typical-use">
 
-</article></slide><slide class=""><hgroup><h2>RStudio Projects</h2></hgroup><article  id="rstudio-projects">
+<ol>
+<li>Do some work on your project</li>
+<li></li>
+</ol>
 
-</article></slide><slide class=""><hgroup><h2>Problems, warnings, how to recover</h2></hgroup><article  id="problems-warnings-how-to-recover">
+</article></slide><slide class=''><hgroup><h2>Distributing code: making things reproducible for others</h2></hgroup><article  id="distributing-code-making-things-reproducible-for-others">
 
-<p>Where do problems come from Burn down</p>
-
-</article></slide><slide class=""><hgroup><h2>Distributing code: making things reproducible for others</h2></hgroup><article  id="distributing-code-making-things-reproducible-for-others">
-
-</article></slide><slide class=""><hgroup><h2>Collaborating with others</h2></hgroup><article  id="collaborating-with-others"></article></slide>
+</article></slide><slide class=''><hgroup><h2>Collaborating with others</h2></hgroup><article  id="collaborating-with-others"></article></slide>
 
 
   <slide class="backdrop"></slide>
