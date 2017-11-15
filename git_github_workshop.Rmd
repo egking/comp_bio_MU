@@ -38,9 +38,17 @@ There are a few ways to use Git. We will show you all three today.
     - [GitHub Desktop](https://desktop.github.com/)
 - via Rstudio (using [RStudio projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects))
 
+## Plan for the day
+
+We will use two major examples today to learn about using git:
+1. Setting up a personal miscellaneous R functions repository
+1. Setting up a collaborative repository with a small group
+
+Our goal at the end of the day is for you to feel comfortable using git and committed to use git for the projects you are working on now and in the future.
+
 ## Starting a project (repository)
 
-There are a couple different ways to set up a repository.
+The first thing we need to do is start a new repository. There are a couple different ways to set up a repository. 
 
 1. Starting a repository on GitHub (this is the preferred method)
 1. Starting a repository on your machine
@@ -55,39 +63,76 @@ There are a couple different ways to set up a repository.
 
 1. Log in to GitHub.com 
 1. Click the "New Repository" button (under the `+` icon in the menu bar)
+1. Name your repository with your initials and misc (for example EGKmisc) to hold your miscellaneous R functions
 1. Clone the repository to your local machine
+  - command is git clone
 
 ## Benefits of starting a repository on GitHub
 
-- Local copy automatically set to properly interact with guthub
+- Local copy automatically set to properly interact with github
     - Push and pull
 - Move local files into empty repository
     - Commit in batch or individually
 
-## Starting a repository locally
 
-- Setting up a new project
-    - Start on GitHub
-    - Start locally (with & without stuff)
 
 ## Ignoring files with `.gitignore`
 
+  - git will track all the files in your repository unless you tell it otherwise
+  - common files you may not want to track include very large data files and files like the R history file
+  .DS_Store
+.Rhistory
+.RData
+
+## Make a change
+
+**Activity**
+1. Start a new R script
+1. Write a function or copy over a function you've written before
+1. Save your file with an informative name in your project folder
+
+- Take a look at what you've done by typing git status or git diff
+
 ## Commits
+
+When you are happy with some work you've done and want to take a snapshot, you will do what is called a commit.
+
+**Activity**
+1. Stage your files
+1. Commit them with a message like "add cool function"
+
 
 ## Syncing: Push and Pull
 
+What we've done so far is take a snapshot locally on our machine. To copy that over to the remote repository on github, we need to push our changes. When we are collaborating, we will also need to pull others changes from the remote. We'll get to this in a bit.
+
+**Activity**
+1. git push
+
 ## Git Clients
+
+So far, we've used the command line to use git. There are more user friendly mechanisms - git clients.
+
+Let's go through the same steps with a client.
 
 ## GitKraken
 
-## Command Line
 
+
+## Starting a repository locally
+
+
+    - Start locally (with & without stuff)
 ## RStudio Projects
 
 ## Problems, warnings, how to recover
 
 Where do problems come from
 Burn down
+## Typical use
+
+  1. Do some work on your project
+  1. 
 
 ## Distributing code: making things reproducible for others
 
