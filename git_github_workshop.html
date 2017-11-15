@@ -143,11 +143,15 @@
 
 </article></slide><slide class=''><hgroup><h2>Starting a project (repository)</h2></hgroup><article  id="starting-a-project-repository">
 
-<p>The first thing we need to do is start a new repository. There are a couple different ways to set up a repository.</p>
+<p>The first thing we need to do is create a new repository. There are a couple different ways to set up a repository.</p>
 
 <ol>
-<li>Starting a repository on GitHub (this is the preferred method)</li>
-<li>Starting a repository on your local machine
+<li>Creating a repository on GitHub (this is the preferred method)
+
+<ul>
+<li>You can still use this even if you have files already</li>
+</ul></li>
+<li>Creating a repository on your local machine (see other tutorials for this method)
 
 <ul>
 <li>Beginning with an empty project folder</li>
@@ -159,7 +163,7 @@
 <p>How do you decide what defines a repository?</p>
 </blockquote>
 
-</article></slide><slide class=''><hgroup><h2>Starting a repository remotely on GitHub</h2></hgroup><article  id="starting-a-repository-remotely-on-github">
+</article></slide><slide class=''><hgroup><h2>Creating a repository remotely on GitHub</h2></hgroup><article  id="creating-a-repository-remotely-on-github">
 
 <p><strong>Activity</strong></p>
 
@@ -167,17 +171,13 @@
 <li>Log in to GitHub.com</li>
 <li>Click the &quot;New Repository&quot; button (under the <code>+</code> icon in the menu bar)</li>
 <li>Name your repository with your initials and misc (for example EGKmisc) to hold your miscellaneous R functions</li>
-<li>Clone the repository to your local machine
-
-<ul>
-<li>command is git clone</li>
-</ul></li>
+<li>Clone the repository to your local machine</li>
 </ol>
 
 </article></slide><slide class=''><hgroup><h2>Benefits of starting a repository on GitHub</h2></hgroup><article  id="benefits-of-starting-a-repository-on-github">
 
 <ul>
-<li>Local copy automatically set to properly interact with github
+<li>Local copy automatically set to properly interact with GitHub
 
 <ul>
 <li>Push and pull without additional setup</li>
@@ -189,6 +189,77 @@
 <li>Push files to GitHub</li>
 </ul></li>
 </ul>
+
+</article></slide><slide class=''><hgroup><h2>Make a change</h2></hgroup><article  id="make-a-change">
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Start a new R script</li>
+<li>Write a function or a bit of code</li>
+<li>Save your file with an informative name in your project folder</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Commits</h2></hgroup><article  id="commits">
+
+<p>When you are happy with some work you&#39;ve done and want to take a snapshot, you will do what is called a commit.</p>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Stage your files</li>
+<li>Commit them with a message like &quot;add function to calculate mean&quot;</li>
+</ol>
+
+<p>Write informative commit messages. Your future self will appreciate it.</p>
+
+</article></slide><slide class=''><hgroup><h2>Syncing: Push and Pull</h2></hgroup><article  id="syncing-push-and-pull">
+
+<p>What we&#39;ve done so far is take a snapshot locally on our machine. To interact with the remote, we need push and pull.</p>
+
+<ul>
+<li>Push = moving local changes to the remote</li>
+<li>Pull = moving from remote to local</li>
+</ul>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Push your last commit to GitHub</li>
+<li>Go to github.com and see that your commit is there.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>RStudio Projects</h2></hgroup><article  id="rstudio-projects">
+
+<ul>
+<li>Git is seemlessly integrated into Rstudio</li>
+<li>Let&#39;s go through our basic steps within Rstudio</li>
+</ul>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Create an R project within your repository
+
+<ul>
+<li>Choose &quot;Existing Directory&quot;</li>
+</ul></li>
+<li>Make a new R script</li>
+<li>Write some code</li>
+<li>Stage, commit, and push</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Git with the command line</h2></hgroup><article  id="git-with-the-command-line">
+
+<p>Sometimes you need (and some people prefer) to use the command line to use git</p>
+
+<p>Let&#39;s go through the same steps with the command line:</p>
+
+<pre >git clone https://github.com/egking/comp_bio_MU
+git status
+git add 
+git commit -m &quot;My Message&quot;
+git push</pre>
 
 </article></slide><slide class=''><hgroup><h2>Ignoring files with <code>.gitignore</code></h2></hgroup><article  id="ignoring-files-with-.gitignore">
 
@@ -205,83 +276,93 @@
 </ul></li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>Make a change</h2></hgroup><article  id="make-a-change">
-
-<p><strong>Activity</strong></p>
-
-<ol>
-<li>Start a new R script</li>
-<li>Write a function or copy over a function you&#39;ve written before</li>
-<li>Save your file with an informative name in your project folder
+</article></slide><slide class=''><hgroup><h2>Collaborating with others</h2></hgroup><article  id="collaborating-with-others">
 
 <ul>
-<li>Take a look at what you&#39;ve done by typing <code>git status</code>, <code>git diff</code>, or looking in the &quot;Changes&quot; pane</li>
-</ul></li>
-</ol>
-
-</article></slide><slide class=''><hgroup><h2>Commits</h2></hgroup><article  id="commits">
-
-<p>When you are happy with some work you&#39;ve done and want to take a snapshot, you will do what is called a commit.</p>
-
-<p><strong>Activity</strong></p>
-
-<ol>
-<li>Stage your files</li>
-<li>Commit them with a message like &quot;add function to claculate mean&quot;</li>
-</ol>
-
-<p>Write informative commit messages. Your future self will appreciate it.</p>
-
-</article></slide><slide class=''><hgroup><h2>Syncing: Push and Pull</h2></hgroup><article  id="syncing-push-and-pull">
-
-<p>What we&#39;ve done so far is take a snapshot locally on our machine. To copy that over to the remote repository on github, we need to push our changes. When we are collaborating, we will also need to pull others changes from the remote. We&#39;ll get to this in a bit.</p>
-
-<p><strong>Activity</strong></p>
-
-<ol>
-<li>git push</li>
-<li>Go to github.com and see that your commit is there.</li>
-</ol>
-
-</article></slide><slide class=''><hgroup><h2>Git Clients</h2></hgroup><article  id="git-clients">
-
-<p>So far, we&#39;ve used the command line to use git. There are more user friendly mechanisms - git clients.</p>
-
-<p>Let&#39;s go through the same steps with a client.</p>
-
-</article></slide><slide class=''><hgroup><h2>GitKraken</h2></hgroup><article  id="gitkraken">
-
-</article></slide><slide class=''><hgroup><h2>GitHub Desktop</h2></hgroup><article  id="github-desktop">
-
-</article></slide><slide class=''><hgroup><h2>Starting a repository locally</h2></hgroup><article  id="starting-a-repository-locally">
-
-<ul>
-<li>Start locally (with &amp; without stuff)</li>
+<li>Collaboration is one of the main reasons to learn git</li>
+<li>Adding collaborators to your projects</li>
+<li>Collaborating with others&#39; projects</li>
 </ul>
 
-</article></slide><slide class=''><hgroup><h2>RStudio Projects</h2></hgroup><article  id="rstudio-projects">
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>Form a collaboration with 1-2 other people in the workshop</li>
+<li>The project leader should create a new repository on GitHub</li>
+<li>The project leader should add their collaborators</li>
+<li>Everyone should clone the repository</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>Good collaboration</h2></hgroup><article  id="good-collaboration">
+
+<ul>
+<li>The first rule of good collaboration using git is to <em>always pull before making changes</em>. Let&#39;s practice this.</li>
+</ul>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>The repository owner creates a file. Save, stage, commit, and push.</li>
+<li>The collaborators pull changes. Make new files, save, stage, commit, and push.</li>
+<li>Everyone pulls to update their local copies.</li>
+</ol>
 
 </article></slide><slide class=''><hgroup><h2>Problems, warnings, how to recover</h2></hgroup><article  id="problems-warnings-how-to-recover">
 
 <p>Where do problems come from?</p>
 
 <ul>
-<li>You or your collaboartor makes changes and pushes them. You make changes to the same file(s) without pulling first.</li>
+<li>You or your collaborator makes changes and pushes them. You make changes to the same file(s) without pulling first.</li>
 <li>git will not let you push changes to overwrite other changes</li>
 </ul>
 
-<p>Burn down</p>
+</article></slide><slide class=''><hgroup><h2>Bad collaboration</h2></hgroup><article  id="bad-collaboration">
 
-</article></slide><slide class=''><hgroup><h2>Typical use</h2></hgroup><article  id="typical-use">
+<p><strong>Activity</strong></p>
 
 <ol>
-<li>Do some work on your project</li>
-<li></li>
+<li>One member should change a file, save, stage, commit, and push.</li>
+<li>Another member should change the same file without pulling first. Now try to commit and push.</li>
+<li>Observe the result.</li>
+</ol>
+
+</article></slide><slide class=''><hgroup><h2>What to do when you run into problems</h2></hgroup><article  id="what-to-do-when-you-run-into-problems">
+
+<p>Your options include:</p>
+
+<ol>
+<li>Advanced git tools to resolve the changes</li>
+<li>Burn it down and start again (often the easier option)</li>
+</ol>
+
+<p><strong>Activity</strong></p>
+
+<ol>
+<li>The member with the conflict from the previous activity should rename their local copy folder.</li>
+<li>Clone the repository from the remote copy anew</li>
+<li>Integrate any changes they&#39;ve made by hand. Save, stage, commit, and push</li>
 </ol>
 
 </article></slide><slide class=''><hgroup><h2>Distributing code: making things reproducible for others</h2></hgroup><article  id="distributing-code-making-things-reproducible-for-others">
 
-</article></slide><slide class=''><hgroup><h2>Collaborating with others</h2></hgroup><article  id="collaborating-with-others"></article></slide>
+<p>An aspiration for us all is for every project to:</p>
+
+<ul>
+<li>Have a public GitHub repository</li>
+<li>Include all code and step by step instructions to reproduce all products: results, figures, tables, etc.</li>
+</ul>
+
+<blockquote>
+<p>Don&#39;t get hung up if you don&#39;t do this perfectly every time. Try to do better with each project</p>
+</blockquote>
+
+</article></slide><slide class=''><hgroup><h2>Questions?</h2></hgroup><article  id="questions">
+
+<center>
+
+<img src=https://camo.githubusercontent.com/cee307f9e03796326817bee5006325f0c229b913/687474703a2f2f692e696d6775722e636f6d2f5849615a5a326b2e6a7067 width="70%" />
+
+</center></article></slide>
 
 
   <slide class="backdrop"></slide>
@@ -293,7 +374,7 @@
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
