@@ -5,6 +5,7 @@ author: 'Tim Beissinger, Elizabeth King, Kevin Middleton, and Lauren Sullivan'
 output:
   ioslides_presentation:
     fig_width: 7
+    css: styles.css
 ---
 
 ```{r setup, echo=FALSE}
@@ -26,6 +27,7 @@ This lecture was modeled from several tutorials available online and in some cas
 
 Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
 
+
 ## What is Git?
 
 1. Git is an application in the same way a web browser or text editor is an application.
@@ -44,6 +46,7 @@ Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.
         - MS_v1, MS_v2, MS_v85, MS_final, MS_final_FINAL, MS_Jan2, MS_v2a.....
 1. Git can be an "electronic lab book": a record of every small change
 
+
 ## Why GitHub?
 
 1. Hosts tons of repositories for projects and software in the life sciences and beyond
@@ -51,6 +54,7 @@ Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.
 1. Easy, seamless collaboration. 
 1. Links to NIH figshare and Zenodo, etc.
 1. Free private repositories & Free "Pro" account for educational use
+
 <center>
 <img src="github_figure.png" width="50%" />
 </center>
@@ -61,6 +65,7 @@ Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.
 You can suggest changes to others, they can suggest things to you. You can collaborate with yourself (home computer, work computer, server). 
 
 </div>
+
 
 ## Assignment 
 
@@ -73,6 +78,7 @@ See [github instructions](https://help.github.com/articles/set-up-git/) and do t
 1. Set up ssh or a password
 
 Do this before our git workshop!
+
 
 ## Yes, it will hurt to use. It is worth it.
 
@@ -95,6 +101,7 @@ when have you read the methods for some analysis you wanted to do and said, what
  
 </div>
 
+
 ## General Use and Terms
 
 1. **repository** - a set of files for a given project that you will track
@@ -111,6 +118,7 @@ when have you read the methods for some analysis you wanted to do and said, what
 Let's look at some repositories on github to see some examples.
 
 <div class="notes">
+
 [Karl's fruit snacks](https://github.com/kbroman/FruitSnacks)
     - images 
     - commit msg
@@ -131,9 +139,10 @@ Let's look at some repositories on github to see some examples.
 
 </div>
 
-## Let's Practice: Ways to use Git
 
-There are a few ways to use Git. We will show you all three today.   
+## Let's Practice: Ways to interface with GitHub
+
+There are a few ways to use Git.
 
 - via a desktop GitHub client
     - [GitHub Desktop](https://desktop.github.com/)
@@ -142,6 +151,7 @@ There are a few ways to use Git. We will show you all three today.
 - via the command line 
 
 > Practice these this week before the workshop
+
 
 ## Starting a project (repository)
 
@@ -154,6 +164,7 @@ The first thing we need to do is create a new repository. There are a couple dif
     - Beginning with a project folder with stuff in it
 
 > How do you decide what defines a repository?
+
     
 ## Creating a repository remotely on GitHub
 
@@ -164,6 +175,7 @@ The first thing we need to do is create a new repository. There are a couple dif
 1. Name your repository with your initials and misc (for example EGKmisc) to hold your miscellaneous R functions
 1. Clone the repository to your local machine
 
+
 ## Benefits of starting a repository on GitHub
 
 - Local copy automatically set to properly interact with GitHub
@@ -172,6 +184,7 @@ The first thing we need to do is create a new repository. There are a couple dif
     - Commit in batch or individually
     - Push files to GitHub
 
+
 ## Make a change
 
 **Activity**
@@ -179,6 +192,7 @@ The first thing we need to do is create a new repository. There are a couple dif
 1. Start a new R script
 1. Write a function or a bit of code
 1. Save your file with an informative name in your project folder
+
 
 ## Commits
 
@@ -190,6 +204,7 @@ When you are happy with some work you've done and want to take a snapshot, you w
 1. Commit them with a message like "add function to calculate mean"
 
 Write informative commit messages. Your future self will appreciate it. 
+
 
 ## Syncing: Push and Pull
 
@@ -203,6 +218,7 @@ What we've done so far is take a snapshot locally on our machine. To interact wi
 1. Push your last commit to GitHub
 1. Go to github.com and see that your commit is there.
 
+
 ## RStudio Projects
 
 - Git is seemlessly integrated into Rstudio
@@ -215,6 +231,7 @@ What we've done so far is take a snapshot locally on our machine. To interact wi
 1. Make a new R script
 1. Write some code
 1. Stage, commit, and push
+
 
 ## Git with the command line
 
@@ -230,6 +247,7 @@ git commit -m "My Message"
 git push
 ```
 
+
 ## Ignoring files with `.gitignore`
 
 - git will track all the files in your repository unless you tell it otherwise
@@ -239,6 +257,7 @@ git push
     - .RData
     - *.Rda
     - Anything with sensitive information
+
 
 ## Plan for the workshop
 
