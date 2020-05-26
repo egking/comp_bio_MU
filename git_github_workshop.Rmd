@@ -16,7 +16,7 @@ output:
 
 This workshop was modeled from several tutorials available online and in some cases, took material and quotes directly:
 
-[Git for Humans by Alice Bartlett](https://speakerdeck.com/alicebartlett/git-for-humans)
+[R packages book section by Hadley Wickham](http://r-pkgs.had.co.nz/git.html)
 
 [Happy Git and Github for the useR by Jenny Bryan](http://happygitwithr.com/)
 
@@ -24,7 +24,7 @@ This workshop was modeled from several tutorials available online and in some ca
 
 [Version Control with Git from Software Carpentry](http://swcarpentry.github.io/git-novice/)
 
-A [Git and Github cheatsheet](https://services.github.com/on-demand/downloads/github-git-cheat-sheet.pdf)
+[Git for Humans by Alice Bartlett](https://speakerdeck.com/alicebartlett/git-for-humans)
 
 Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
 
