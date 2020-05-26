@@ -1,8 +1,7 @@
 ---
 title: "Git and Github"
 subtitle: "Workshop Exercises"
-author: 'Tim Beissinger, Elizabeth King, and Kevin Middleton'
-date: 'Last updated: `r Sys.Date()`'
+author: 'Tim Beissinger, Elizabeth King, Kevin Middleton, and Lauren Sullivan'
 output:
   ioslides_presentation:
     fig_width: 7
@@ -28,38 +27,20 @@ This workshop was modeled from several tutorials available online and in some ca
 
 Additional Git resources are listed in Karl's guide: [Resources](http://kbroman.org/github_tutorial/pages/resources.html)
 
-## Ways to use Git
+## Plan for the workshop
 
-There are a few ways to use Git. We will show you all three today. 
-
-- via the command line 
-- via a desktop GitHub client
-    - [GitKraken](https://www.gitkraken.com/)
-    - [GitHub Desktop](https://desktop.github.com/)
-- via Rstudio (using [RStudio projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects))
-
-## Plan for the day
-
-We will use two major examples today to learn about using git:
-
-1. Setting up a personal miscellaneous R functions repository
+1. Q & A from the lecture
+1. Review setting up a personal repository, committing changes, pushing & pulling
 1. Setting up a collaborative repository with a small group
 
 Our goal at the end of the day is for you to feel comfortable using git and committed to use git for the projects you are working on now and in the future.
 
-## Starting a project (repository)
+## Questions from the lecture
 
-The first thing we need to do is create a new repository. There are a couple different ways to set up a repository. 
+What questions do you have?
 
-1. Creating a repository on GitHub (this is the preferred method)
-    - You can still use this even if you have files already
-1. Creating a repository on your local machine (see other tutorials for this method)
-    - Beginning with an empty project folder
-    - Beginning with a project folder with stuff in it
 
-> How do you decide what defines a repository?
-    
-## Creating a repository remotely on GitHub
+## Review: Creating a repository remotely on GitHub
 
 **Activity**
 
@@ -67,14 +48,6 @@ The first thing we need to do is create a new repository. There are a couple dif
 1. Click the "New Repository" button (under the `+` icon in the menu bar)
 1. Name your repository with your initials and misc (for example EGKmisc) to hold your miscellaneous R functions
 1. Clone the repository to your local machine
-
-## Benefits of starting a repository on GitHub
-
-- Local copy automatically set to properly interact with GitHub
-    - Push and pull without additional setup
-- Move local files into empty repository
-    - Commit in batch or individually
-    - Push files to GitHub
 
 ## Make a change
 
@@ -106,43 +79,6 @@ What we've done so far is take a snapshot locally on our machine. To interact wi
 
 1. Push your last commit to GitHub
 1. Go to github.com and see that your commit is there.
-
-## RStudio Projects
-
-- Git is seemlessly integrated into Rstudio
-- Let's go through our basic steps within Rstudio
-
-**Activity**
-
-1. Create an R project within your repository
-    - Choose "Existing Directory"
-1. Make a new R script
-1. Write some code
-1. Stage, commit, and push
-
-## Git with the command line
-
-Sometimes you need (and some people prefer) to use the command line to use git
-
-Let's go through the same steps with the command line:
-
-```
-git clone https://github.com/egking/comp_bio_MU
-git status
-git add 
-git commit -m "My Message"
-git push
-```
-
-## Ignoring files with `.gitignore`
-
-- git will track all the files in your repository unless you tell it otherwise
-- Common files you may not want to track include very large data files and files like the R history file
-    - .DS_Store
-    - .Rhistory
-    - .RData
-    - *.Rda
-    - Anything with sensitive information
 
 ## Collaborating with others
 
